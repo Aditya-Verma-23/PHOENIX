@@ -1,42 +1,40 @@
 # PHOENIX
 ## Phase 1
 
-                    User Request
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │  AI Gateway   │
-                 │ Model Routing │
-                 └───────┬───────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │ Intent / Purpose│
-                │   Detection     │
-                └────────┬────────┘
-                         │
-              ┌──────────┼───────────┐
-              ▼          ▼           ▼
-           RAG Agent   Harvest    Match Agent
-              │          │           │
-              ▼          ▼           ▼
-        Retrieval     Extraction   Similarity
-              │          │           │
-              └──────────┼───────────┘
-                         ▼
-                ┌─────────────────┐
-                │ Agent/Concierge │
-                │ Orchestration   │
-                └────────┬────────┘
-                         │
-                         ▼
-              ┌─────────────────────┐
-              │ Guardrails + RBAC   │
-              │ Consent + Policies  │
-              └──────────┬──────────┘
-                         │
-                         ▼
-                  Final AI Response
-                         │
-                         ▼
-                  Audit + Logging
+      USER
+      │
+      ▼
+    AI GATEWAY
+      │
+      ▼
+    PURPOSE / INTENT
+      │
+      ▼
+    AI CONCIERGE / ORCHESTRATOR
+      │
+      ├──────────────┬───────────────┐
+      ▼              ▼               ▼
+     RAG          AI HARVEST    MATCH RATIONALE
+      │              │               │
+      └──────────────┼───────────────┘
+                     ▼
+            PROFILE EVOLUTION
+                     │
+                     ▼
+            EVIDENCE NARRATIVE
+                     │
+                     ▼
+          GUARDRAILS + CONSENT + RBAC
+                     │
+                     ▼
+              FINAL AI RESPONSE
+                     │
+                     ▼
+              AI AUDIT / LOGGING
+                     │
+                     ▼
+            TESTING / EVALUATION
+    
+           TOTAL: ~10–15.5 DAYS
+           Recommended: ~12 DAYS
+           8 HOURS = 1 DAY
