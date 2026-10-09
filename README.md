@@ -35,6 +35,4 @@
                      ▼
             TESTING / EVALUATION
     
-           TOTAL: ~10–15.5 DAYS
-           Recommended: ~12 DAYS
-           8 HOURS = 1 DAY
+
